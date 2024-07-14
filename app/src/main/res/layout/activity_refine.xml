@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RefineActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/refineToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarExercise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/refineToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/select_availability"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+
+        <Spinner
+            android:layout_marginTop="8dp"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:popupBackground="@color/white"
+            android:padding="5dp"
+            android:background="@drawable/et_bg_layout"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/your_status"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg_layout"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#225172"
+            android:text="@string/status_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/word_length"
+                android:layout_marginEnd="20dp"
+                android:textColor="#225172"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/distance_text"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/slider_desc"
+                android:value="20"
+                style="@style/Widget.App.Slider"
+                app:labelBehavior="visible"
+                android:valueFrom="0"
+                android:valueTo="100"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/startPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startPoint"
+                    android:layout_marginStart="14dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/otherHeading"/>
+                <TextView
+                    android:id="@+id/endPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endPoint"
+                    android:layout_marginEnd="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/otherHeading"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/purpose"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coffee"
+                android:background="@drawable/tv_purpose_bg"
+                android:layout_marginStart="14dp"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/otherHeading"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/business"
+                android:layout_margin="5dp"
+                android:background="@drawable/tv_purpose_bg"
+                android:textSize="15sp"
+                android:textColor="@color/otherHeading"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friendship"
+                android:layout_margin="5dp"
+                android:background="@drawable/tv_purpose_bg"
+                android:textSize="15sp"
+                android:textColor="@color/otherHeading"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hobbies"
+                android:background="@drawable/tv_purpose_bg"
+                android:layout_marginStart="14dp"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/otherHeading"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movies"
+                android:layout_margin="5dp"
+                android:background="@drawable/tv_purpose_bg"
+                android:textSize="15sp"
+                android:textColor="@color/otherHeading"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dinning"
+                android:layout_margin="5dp"
+                android:background="@drawable/tv_purpose_bg"
+                android:textSize="15sp"
+                android:textColor="@color/otherHeading"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dating"
+                android:background="@drawable/tv_purpose_bg"
+                android:layout_marginStart="14dp"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/otherHeading"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matrimony"
+                android:layout_margin="5dp"
+                android:background="@drawable/tv_purpose_bg"
+                android:textSize="15sp"
+                android:textColor="@color/otherHeading"/>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginTop="20dp"
+           android:gravity="center">
+           <Button
+               android:layout_width="200dp"
+               android:layout_height="match_parent"
+               android:textColor="@color/white"
+               android:text="@string/save_amp_explore"
+               android:background="@drawable/refine_button_bg"
+               android:textStyle="bold"/>
+       </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

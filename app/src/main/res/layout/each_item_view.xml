@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dp_card_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#ABBFF2"
+        app:cardCornerRadius="8dp">
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/each_item_layout_bg"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@id/dp_card_view"
+        app:layout_constraintTop_toTopOf="@id/dp_card_view"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:paddingStart="5dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Kshitij Raypale"
+                    android:textColor="@color/nameHeading"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ INVITE"
+                    android:textSize="18sp"
+                    android:textColor="@color/nameHeading"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/userLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Pune"
+                    android:textColor="@color/otherHeading"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/userLocation"
+                    android:textColor="@color/otherHeading"
+                    android:text=" | "
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/userProfession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/seperator"
+                    android:text="Graduate"
+                    android:textColor="@color/otherHeading"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/distanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Within"
+                    android:textColor="@color/otherHeading"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/userDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/distanceHeading"
+                    android:text=" 100 m"
+                    android:textColor="@color/otherHeading"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <ProgressBar
+                    android:layout_width="100dp"
+                    android:id="@+id/progressbarPredict"
+                    android:progress="18"
+                    android:max="100"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Profile Score - 18% "/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee"
+                android:textColor="#6273D0"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="4dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/coffee_cup"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bussines"
+                android:textColor="#32C938"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="4dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/briefcase"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="friendship"
+                android:textColor="#BABC4C"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="4dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/friendship"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/otherHeading"
+            android:textStyle="bold"
+            android:text="Hi community! I am open to new Connection 😊"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

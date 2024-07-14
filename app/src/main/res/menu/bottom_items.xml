@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+        <item
+            android:id="@+id/itemExplore"
+            android:icon="@drawable/eye"
+            android:title="Explore" />
+        <item
+            android:id="@+id/itemConnections"
+            android:icon="@drawable/social_network"
+            android:title="Connections" />
+        <item
+            android:id="@+id/itemChat"
+            android:icon="@drawable/chat__1_"
+            android:title="Chat" />
+        <item
+            android:id="@+id/itemContacts"
+            android:icon="@drawable/contacts"
+            android:title="Contacts"
+            />
+
+        <item
+            android:id="@+id/itemGroups"
+            android:icon="@drawable/hashtag_svgrepo_com"
+            android:title="Groups"
+            />
+
+</menu>

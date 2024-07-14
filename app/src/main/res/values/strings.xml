@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Test Assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Connection fragment</string>
+    <string name="slider_desc">seebarSlider</string>
+    <string name="select_availability">Select Your Availability</string>
+    <string name="your_status">Add Your Status</string>
+    <string name="status_text">Hi community ! I\'m open to new conn connections 😊</string>
+    <string name="word_length">49/500</string>
+    <string name="distance_text">Select Hyper local Distance</string>
+    <string name="startPoint">1km</string>
+    <string name="endPoint">100km</string>
+    <string name="purpose">Select Purpose</string>
+    <string name="coffee">Coffee</string>
+    <string name="business">business</string>
+    <string name="friendship">Friendship</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="movies">Movies</string>
+    <string name="dinning">Dinning</string>
+    <string name="dating">Dating</string>
+    <string name="matrimony">Matrimony</string>
+    <string name="save_amp_explore"><![CDATA[Save & Explore]]></string>
+</resources>
